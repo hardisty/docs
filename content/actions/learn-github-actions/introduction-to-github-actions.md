@@ -58,7 +58,7 @@ A runner is a server that has the [{% data variables.product.prodname_actions %}
 
 {% data variables.product.prodname_actions %} uses YAML syntax to define the events, jobs, and steps. These YAML files are stored in your code repository, in a directory called `.github/workflows`.
 
-You can create an example workflow in your repository that automatically triggers a series of commands whenever code is pushed. In this workflow, {% data variables.product.prodname_actions %} checks out the pushed code, installs the software dependencies, and runs `bats -v`.
+You can create an example workflow in your repository that automatically triggers a series of commands whenever code is pushed. In this workflow, {% data variables.product.prodname_actions %} checks out the pushed code, installs the software dependencies, and runs `bats -v`. (`bats` is a [testing framework](https://github.com/bats-core/bats-core).) 
 
 1. In your repository, create the `.github/workflows/` directory to store your workflow files.
 1. In the `.github/workflows/` directory, create a new file called `learn-github-actions.yml` and add the following code.
